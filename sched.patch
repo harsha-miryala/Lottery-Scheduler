@@ -1,5 +1,3 @@
-*** src.clean/kernel/proc.h Thu Oct  6 22:51:27 2011
---- src/kernel/proc.h Sat Oct 29 18:24:29 2011
 ***************
 *** 230,238 ****
    * priority) and increment.  Priorities of the processes in the boot image 
@@ -21,8 +19,6 @@
   #define USER_Q  	  ((MIN_USER_Q - MAX_USER_Q) / 2 + MAX_USER_Q) /* default
   						(should correspond to nice 0) */
   #define MIN_USER_Q	  (NR_SCHED_QUEUES - 1)	/* minimum priority for user
-*** src.clean/servers/sched/schedproc.h Thu Oct  6 22:51:30 2011
---- src/servers/sched/schedproc.h Sat Oct 29 18:24:57 2011
 ***************
 *** 26,31 ****
 --- 26,32 ----
@@ -33,8 +29,6 @@
   } schedproc[NR_PROCS];
   
   /* Flag values */
-*** src.clean/servers/sched/schedule.c Thu Oct  6 22:51:31 2011
---- src/servers/sched/schedule.c Sun Oct 30 18:00:06 2011
 ***************
 *** 10,15 ****
 --- 10,16 ----
